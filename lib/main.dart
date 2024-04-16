@@ -2,6 +2,8 @@ import 'package:company_inventory/firebase_options.dart';
 import 'package:company_inventory/localization/app_localization.dart';
 import 'package:company_inventory/routes.dart';
 import 'package:company_inventory/screens/home/home_screen.dart';
+import 'package:company_inventory/screens/login/login_screen.dart';
+import 'package:company_inventory/services/login_service.dart';
 import 'package:company_inventory/stores/home/home_store.dart';
 import 'package:company_inventory/theme/themes.dart';
 import 'package:company_inventory/utils/device_utils.dart';
@@ -59,7 +61,9 @@ class MyApp extends StatelessWidget {
                 supportedLocales: AppLocalization.locales.supportedLocales,
                 theme: ThemeProvider.themeOf(themeCtx).data,
                 debugShowCheckedModeBanner: false,
-                initialRoute: HomeScreen.routeName,
+                initialRoute: LoginService.isLogged
+                    ? HomeScreen.routeName
+                    : LoginScreen.routeName,
                 navigatorKey: Routes.seafarer.navigatorKey,
                 onGenerateRoute: Routes.seafarer.generator(),
               ),
