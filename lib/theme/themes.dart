@@ -24,7 +24,7 @@ class Themes {
           iconTheme: themeLight.appBarTheme.iconTheme?.copyWith(
             color: ThemeColors.black,
           ),
-          titleTextStyle: themeLight.textTheme.headline3?.copyWith(
+          titleTextStyle: themeLight.textTheme.displaySmall?.copyWith(
             color: ThemeColors.black,
             fontSize: 20,
             fontWeight: FontWeight.w600,
@@ -36,56 +36,56 @@ class Themes {
           backgroundColor: ThemeColors.darkBackground,
         ),
         textTheme: TextTheme(
-          bodyText1: themeLight.textTheme.bodyText1?.copyWith(
+          bodyLarge: themeLight.textTheme.bodyLarge?.copyWith(
             color: ThemeColors.black,
             fontSize: 16,
             fontWeight: FontWeight.normal,
             height: 1.1,
           ),
-          bodyText2: themeLight.textTheme.bodyText2?.copyWith(
+          bodyMedium: themeLight.textTheme.bodyMedium?.copyWith(
             color: ThemeColors.black,
             fontWeight: FontWeight.normal,
             fontSize: 14,
             height: 1.1,
           ),
-          headline3: themeLight.textTheme.headline3?.copyWith(
+          displaySmall: themeLight.textTheme.displaySmall?.copyWith(
             color: ThemeColors.black,
             fontSize: 20,
             fontWeight: FontWeight.w500,
             height: 1.1,
           ),
-          headline4: themeLight.textTheme.headline4?.copyWith(
+          headlineMedium: themeLight.textTheme.headlineMedium?.copyWith(
             color: ThemeColors.black,
             fontSize: 18,
             fontWeight: FontWeight.w500,
             height: 1.1,
           ),
-          headline5: themeLight.textTheme.headline5?.copyWith(
+          headlineSmall: themeLight.textTheme.headlineSmall?.copyWith(
             fontSize: 16,
             color: ThemeColors.black,
             fontWeight: FontWeight.w500,
             height: 1.3,
           ),
-          headline6: themeLight.textTheme.headline6?.copyWith(
+          titleLarge: themeLight.textTheme.titleLarge?.copyWith(
             color: ThemeColors.black,
             fontSize: 14,
             fontWeight: FontWeight.normal,
             height: 1.4,
           ),
-          subtitle1: themeLight.textTheme.subtitle1?.copyWith(
+          titleMedium: themeLight.textTheme.titleMedium?.copyWith(
             fontSize: 16,
             color: ThemeColors.black,
             fontWeight: FontWeight.normal,
             height: 1.1,
           ),
-          subtitle2: themeLight.textTheme.subtitle2?.copyWith(
+          titleSmall: themeLight.textTheme.titleSmall?.copyWith(
             fontSize: 14,
             color: Colors.grey,
             letterSpacing: 0.1,
             fontWeight: FontWeight.normal,
             height: 1.1,
           ),
-          button: themeLight.textTheme.button?.copyWith(
+          labelLarge: themeLight.textTheme.labelLarge?.copyWith(
             color: ThemeColors.black,
             fontSize: 16,
             fontWeight: FontWeight.w700,

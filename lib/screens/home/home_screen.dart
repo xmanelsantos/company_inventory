@@ -65,14 +65,14 @@ class _HomeScreenState extends State<HomeScreen> with AfterInitMixin {
             children: [
               Text(
                 '${_appLocalization.welcome},',
-                style: _theme.textTheme.headline3?.copyWith(
+                style: _theme.textTheme.displaySmall?.copyWith(
                   fontWeight: FontWeight.w900,
                   color: _theme.cardColor,
                 ),
               ),
               Text(
                 '${getWelcomeMessage()}!',
-                style: _theme.textTheme.headline6,
+                style: _theme.textTheme.titleLarge,
               ),
             ],
           ),
@@ -113,13 +113,13 @@ class _HomeScreenState extends State<HomeScreen> with AfterInitMixin {
         children: [
           Text(
             _appLocalization.theme,
-            style: _theme.textTheme.headline4?.copyWith(
+            style: _theme.textTheme.headlineMedium?.copyWith(
               fontWeight: FontWeight.w500,
             ),
           ),
           Text(
             isLight ? _appLocalization.light : _appLocalization.dark,
-            style: _theme.textTheme.headline4?.copyWith(),
+            style: _theme.textTheme.headlineMedium?.copyWith(),
           ),
           Container(
             decoration: BoxDecoration(
@@ -189,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen> with AfterInitMixin {
         children: [
           Text(
             _appLocalization.counter,
-            style: _theme.textTheme.headline4?.copyWith(
+            style: _theme.textTheme.headlineMedium?.copyWith(
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -197,7 +197,7 @@ class _HomeScreenState extends State<HomeScreen> with AfterInitMixin {
             builder: (_) {
               return Text(
                 _homeStore.counter.toString(),
-                style: _theme.textTheme.headline4?.copyWith(),
+                style: _theme.textTheme.headlineMedium?.copyWith(),
               );
             },
           ),
@@ -207,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> with AfterInitMixin {
             },
             child: Text(
               _appLocalization.increment,
-              style: _theme.textTheme.headline4?.copyWith(
+              style: _theme.textTheme.headlineMedium?.copyWith(
                 fontWeight: FontWeight.w800,
               ),
             ),
