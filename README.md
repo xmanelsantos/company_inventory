@@ -1,6 +1,6 @@
-# company_inventory
-
-A new Flutter project.
+# Company Inventory
+This is a college project from APS class, is a mobile application that manager (CRUD) objects that a company is owner.
+Separate in categories, show list view and more.
 
 ## Getting Started
 ```
