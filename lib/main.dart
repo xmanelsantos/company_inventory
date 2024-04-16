@@ -1,17 +1,21 @@
-
+import 'package:company_inventory/firebase_options.dart';
 import 'package:company_inventory/localization/app_localization.dart';
 import 'package:company_inventory/routes.dart';
 import 'package:company_inventory/screens/home/home_screen.dart';
 import 'package:company_inventory/stores/home/home_store.dart';
 import 'package:company_inventory/theme/themes.dart';
 import 'package:company_inventory/utils/device_utils.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:theme_provider/theme_provider.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   Routes.createRoutes();
   runApp(const MyApp());
 }
